@@ -1,0 +1,46 @@
+{
+  "name": "git-release-notes",
+  "version": "1.0.0",
+  "description": "Automatically generates changelogs, GitHub release notes, and social announcements from Git tag diffs using AI-powered commit analysis.",
+  "main": "scripts/generate-release-notes.js",
+  "scripts": {
+    "test": "node tests/test-runner.js",
+    "build": "echo 'Skill is ready'",
+    "lint": "eslint scripts/ references/ assets/"
+  },
+  "keywords": [
+    "changelog",
+    "release-notes",
+    "git",
+    "automation",
+    "openclaw"
+  ],
+  "author": "OpenClaw Community",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "handlebars": "^4.7.7",
+    "chalk": "^4.1.2",
+    "debug": "^4.3.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "openclaw": {
+    "skill": true,
+    "category": "development",
+    "triggers": [
+      "generate changelog",
+      "create release notes",
+      "make announcement",
+      "update CHANGELOG.md",
+      "summarize commits",
+      "produce release notes"
+    ]
+  }
+}
