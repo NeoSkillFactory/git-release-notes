@@ -40,15 +40,14 @@ This skill analyzes Git commit history between tags to automatically generate pr
 ## Installation
 
 **Requirements:**
-- Node.js 16+ (required for script execution)
-- Git CLI (required for repository access)
-- OpenClaw agent system (required for skill activation)
+- Node.js 16+
+- Git CLI
 
-**Setup steps:**
-1. Install the skill via clawhub: `clawhub install git-release-notes`
-2. Ensure Node.js is installed and available in PATH
-3. Verify Git repository is initialized and has tags
-4. The skill will automatically load when triggered
+```bash
+git clone https://github.com/NeoSkillFactory/git-release-notes.git
+cd git-release-notes
+npm install
+```
 
 ## Quick Start
 
